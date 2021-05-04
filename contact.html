@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Page</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3
+    /css/fontawesome.min.css"/>
+    <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+    <!--navbar-->
+<section class="sub-header">
+<nav>
+<a href="#"><img src="logo.png"></a>
+<div class="nav-link" id="navLink">
+<i class="fa fa-times" onclick="hideMenu()"></i>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="course.html">Courses</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<i class="fa fa-bars"  onclick="showMenu()"></i>
+</nav>
+<h1>Contact Us</h1>
+</section>
+
+                                            <!--contact us-->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937586!2d2.2922926156743895!3d48.
+    858370079287475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20
+    Tower!5e0!3m2!1sen!2sng!4v1620128822382!5m2!1sen!2sng"width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>XYZ Road, ABC Building</h5>
+                    <p>Birmingham, England, UK</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+44 770645847352</h5>
+                    <p>Monday to Saturday, 10AM to 5PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <span>
+                    <h5>info@lisa.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter Your Name" required/>
+                <input type="email" name="email" placeholder="Enter Email Address" required/>
+                <input type="number" name="number" placeholder="Enter Your Contact" required/>
+                <input type="text" name="subject" placeholder="Enter Your Subject" required/>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+                                            <!---Footer---->
+<section class="footer">
+    <hr>
+   <h4>About Us</h4>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti expedita,
+        ea <br>incidunt laborum magni earum iste autem voluptatum, a molesti</p> 
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i> 
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Melissa</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <!--Javascript-->
+             <script>
+                 var navLink = document.getElementById('navLink');
+                 function showMenu(){
+                     navLink.style.right ="0px";
+                 }
+                 function hideMenu(){
+                     navLink.style.right ="-200px";
+                 }
+             </script>
+    </body>
+</html>
